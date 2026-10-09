@@ -40,6 +40,31 @@
         //}
 
 
+        /////////////////// 05
+        /// inital with constructor and init property
+        
+        //Initialization with  create - 01 => initialization with  create - 01 => init property can be set only during object initialization, making it immutable after the object is created.
+        //public string Name { get; init; }="Mehdi"; //
+
+        public string Name { get; init; } // Initialization with
+
+        // constructor => init property can be set only during object initialization, making it immutable after the object is created.
+        //public Person(string name)
+        //{
+        //    Name = name;
+        //}
+        //  public string Name { get; init; } // Initialization with  create
+
+
+        //////////////////////////////////////////////////////////////
+        /// Summary of these topics and best practices with examples
+        /// 
+        /// 1. Use `const` for values that are compile-time constants and shared across all instances.
+        /// 2. Use `readonly` for values that are assigned at runtime but should not change after construction.
+        /// 3. Use `init` properties for values that should be set during object initialization and remain immutable afterwards.
+        /// 4. Prefer `init` properties for most scenarios where immutability is desired, as they provide flexibility and clarity.
+        /// The Best Practice
+        /// Use `init` properties for creating immutable objects, as they allow setting values during object initialization while preventing modifications afterwards.
 
     }
 }
